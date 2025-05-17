@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly_global"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="150dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="VisualLintBounds">
+
+    <LinearLayout
+        android:id="@+id/ly_opciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/ly_textos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_nombre"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Nombre"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/et_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/nombre"
+                    android:inputType="text"
+                    android:textColorHint="#546E7A"
+                    tools:ignore="DuplicateSpeakableTextCheck,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_edad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_edad"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Edad"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/et_edad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/edad"
+                    android:inputType="number"
+                    android:textColorHint="#546E7A"
+                    tools:ignore="DuplicateSpeakableTextCheck,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_ciudad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_ciudad"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Ciudad"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <Spinner
+                    android:id="@+id/sp_ciudades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/ciudades"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_botones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tb_apagar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="25"
+            android:checked="true"
+            android:text="@string/apagar"
+            android:textOff="@string/encender"
+            android:textOn="@string/apagar"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/b_guardar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="75"
+            android:text="@string/guardar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_borrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#4CAF50"
+        android:gravity="center_horizontal"
+        android:text="@string/borrar"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/lv_personas"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_presentadatos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</LinearLayout>

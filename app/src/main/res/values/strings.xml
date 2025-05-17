@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MotioEvent And KeyEvent</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="edad">Edad</string>
+    <string name="nombre">Nombre</string>
+    <string name="apagar">Apagar</string>
+    <string name="encender">Encender</string>
+    <string name="guardar">Guardar</string>
+    <string name="borrar">Borrar Lista -> -> -></string>
+    <string name="snacknombre">Debes poner un Nombre</string>
+    <string name="snackedad">Debes poner una Edad</string>
+    <string name="snacktodo">Los campos nombre y edad no pueden estar vacios para guardar.</string>
+    <string name="recarga">Recarga</string>
+    <string name="apagar_entradas">Apagar Entradas</string>
+    <string name="mensajerecarga">Lee esto rápidamente y te recargarás de ENERGÍA POSITIVA para un dia entero.</string>
+    <string name="mensajerecarga2">(Pero cariño, también debes poner algo de tu parte)</string>
+    <string name="borrar_este_usuario">Borrar este Usuario</string>
+    <array name="ciudades">
+        <item>Valencia</item>
+        <item>Madrid</item>
+        <item>Barcelona</item>
+    </array>
+</resources>
